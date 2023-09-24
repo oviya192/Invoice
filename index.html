@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="invoice.png">
+</head>
+<body>
+    <header>
+        <figure>
+            <div class="logo">INVOICE GENERATOR</div>
+        </figure>
+    </header>
+    <main>
+        <div class="containers">
+            <div class="container1">
+                <div class="contents1">
+                    <div class="cont-left">
+                        <h3>INVOICE</h3>
+                        <button>Logo-Click to <br> Upload</button>
+                    </div>
+                    <div class="cont-right">
+                        <i class="fa-regular fa-sun"></i>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                          </label>
+                          <i class="fa-regular fa-moon"></i>
+                    </div>
+            </div>
+            <div class="forms">
+                <div class="form1">
+                    <h5>Bill From</h5>
+                    <form>
+                        <p><label>Company:</label><input id="a" type="text" placeholder="e.g. Apple Incorporation"></p>
+                        <p><label>Address:</label><input id="b" type="text" placeholder="e.g. Bennington street 22"></p>
+                        <p><label>Zip:</label><input id="b" type="text" placeholder="e.g 234523"></p>
+                        <p><label>city:</label><input id="b" type="text" placeholder="e.g. Seattle"></p>
+                        <p><label>Country:</label><input id="b" type="text" placeholder="e.g. USA"></p>
+                    </form>
+                </div>
+                <div class="form2">
+                    <h5>Bill To</h5>
+                    <p><label>Company:</label><input id="a" type="text" placeholder="e.g. Apple Incorporation"></p>
+                    <p><label>Address:</label><input id="b" type="text" placeholder="e.g. Bennington street 22"></p>
+                    <p><label>Zip:</label><input id="b" type="text" placeholder="e.g 234523"></p>
+                    <p><label>city:</label><input id="b" type="text" placeholder="e.g. Seattle"></p>
+                    <p><label>Country:</label><input id="b" type="text" placeholder="e.g. USA"></p>
+                </div>
+            </div>
+            <h5>Custom Fields  <a href="">Add custom field </a>  </h5>
+            <div class="form3">
+                <p><label>Invoice Number:</label><input type="number" placeholder="Invoice Number"></p>
+                <p><label>Issued Date:</label><input type="date" placeholder="Issued date"></p>
+                <p><label>Due Date:</label><input type="date" >
+            </div>
+            <div class="form4">
+                <div>
+                    <label>Item name</label><input type="text"><br>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label>Qty</label><input type="text">
+                </div>
+                <div>
+                    <label>Rate</label><input type="text">
+                </div>
+                <div>
+                    <label> Line Total</label><input type="text">
+                </div>
+            </div>
+            <hr width="100%" 
+            size="1"  
+            color="lightgray">
+            <div class="forms2">
+                <div class="form5">
+                    <div>
+                        <label>Notes</label>
+                    </div>
+                   <input type="text">
+                    <div>
+                        <label>Terms</label>
+                    </div>
+                   <input type="text">
+                </div>
+                <div class="form5-right">
+                    <div class="f5-right1">
+                        <div>
+                            <p>Discount</p>
+                            <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                        </div>
+                        <div>
+                            <p>Tax</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                        <div>
+                            <p>Shipping</p>
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label> 
+                        </div>
+                    </div>
+                    <div class="f5-right2">
+                        <p>Sub Total</p>
+                        <p>ERN 10.00</p>
+                    </div>
+                    <!-- <div class="f5-right3">
+                        <p>Tax</h5>
+                        <i class="fa-solid fa-arrows-rotate"><input type="text" name="" id="" placeholder="ERN"></i>
+                    </div> -->
+                    <br>
+                    <hr width="100%"  
+                    color="lightgray" noshade>
+                    <div class="f5-right4">
+                        <p>Total Amount</p>
+                        <h4>ERN 10 <h4>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="container2">
+                <div class="contents2">
+                    <button class="btn1">+ New Invoice</button><br>
+                    <button class="btn2">Save Invoice</button><br>
+                    <button class="btn3">Generate PDF Invoice</button><br>
+                    <button class="btn5"> Export</button>
+                    <button class="btn5"> Import</button><br>
+                    <button class="btn6">Missing a Feature?</button>
+                    <h4>Currency</h4>
+                        <form>
+                            <select id="currency">
+                                <option value="">AED-UAE Dirham</option>
+                                <option value="">AFN-Afghani</option>
+                                <option value="">ALL- Lek</option>
+                                <option value="">AMK- Armenian Dram</option>
+                            </select>
+                        </form>
+                        <br>
+                        <hr width="100%"  
+                        color="lightgray" noshade>
+                        <p>Saved Invoices</p>
+                        <input type="text" value=" # Sep 23 2023">
+                        <button class="btn4">DEL</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="contents3">
+                    <div class="para">
+                        You want to run your business running smoothly, right? Then you must keep your bills updated. A free invoice generator can be helpful in this situation. <br><br>
+                        This invoice generator is free and privacy-based. Here are the features offered to you:
+                    </div>
+                    <div class="bullets">
+                        <ul>
+                            <li><b> Sender and Recipient:</b></li>
+                            <p>The invoice generator allows users to input their information as the sender and recipient effortlessly. All crucial fields are included: Name, Address, City, and Country. If you need additional information like VAT number, email, etc., you can use custom fields for this.</p>
+                            <li><b>Invoice Date and Due Date:</b></li>
+                            <p>Users can set the invoice and due dates, ensuring clarity and timeliness in payment expectations. This function helps with better money management and makes it less likely that payments will be late (hopefully :)).</p>
+                            <li><b>Local Storage and Privacy:</b></li>
+                            <p>Data privacy is paramount, and this invoice generator addresses this concern by saving the data in local storage. Users can confidently create and manage invoices, knowing their information is kept secure.</p>
+                            <li><b>PDF Invoice Generation:</b></li>
+                            <p>The tool offers the ability to generate professional-looking PDF invoices. I'm currently working on additional templates for PDFs with different layouts.</p>
+                            <li><b>Import and Export Support:</b></li>
+                            <p>The tool supports importing and exporting invoices in a simple text file format, making it convenient to transfer invoice data across platforms or keep backups of essential records.</p>
+                            <li><b>Custom Fields and Notes:</b></li>
+                            <p>Users can include custom fields like VAT, bank information, and other relevant details. Additionally, fields for notes and terms allow for clear communication and additional information in the invoice.</p>
+                            <li><b>Discounts, Taxes, and Shipping Prices:</b></li>
+                            <p>This invoice generator offers a complete invoicing solution by supporting shipping costs, taxes, and discounts. Both percentage and amount are supported.</p>
+                            <li><b>Local Save and Load Functionality:</b></li>
+                            <p>By enabling users to save and load their invoices locally, the solution improves accessibility and gradually makes effective invoice administration easier.</p>
+                            <li><b>Multi-Currency Support:</b></li>
+                            <p>I included all world currencies to ensure that users from all over the world can utilize the tool. Now it's a flexible and universally applicable billing solution.</p>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer>
+        <div class="one">
+            <h4>Invoice Generator  <span>| &copy; 2023 by Csaba Kissi</span></h4>
+        </div>
+        <div class="two">
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-brands fa-dribbble"></i>
+        </div>    
+        
+        
+    </footer>
+</body>
+</html>
